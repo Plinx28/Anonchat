@@ -1,0 +1,21 @@
+{% extends 'chat/layout.html' %}
+
+{% block title %} Read message {% endblock %}
+
+{% block content %}
+    <div class="panel">
+        <div class="btn-direct">
+            <a href="{% url 'home' %}">To home page</a>
+        </div>
+        <p class="panel-title">Read message</p>
+        <div class="input-panel">
+            <form method="get">
+                {% csrf_token %}
+                {{ form.secret_phrase }} <br>
+                {{ form.note_hash }} <br>
+                <span>{{ error }}</span><br>
+                <button id="send-button" type="submit">Get message</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}

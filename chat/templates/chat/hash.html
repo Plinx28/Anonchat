@@ -1,0 +1,16 @@
+{% extends 'chat/layout.html' %}
+
+{% block title %} ID message {% endblock %}
+
+{% block content %}
+    <div class="panel">
+        <h1>ID сообщения:</h1>
+        <h2>{{ note_hash }}</h2>
+        <div class="btns-container">
+            <div class="btn-direct">
+                <a href="{% url 'home' %}">To home page</a>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}

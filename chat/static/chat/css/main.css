@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    margin: 1%;
+    padding: 3%;
+    color: #fff;
+}
+h1, h2, span {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px; /* Увеличиваем максимальную ширину контейнера */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.panel {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 20px;
+    width: 48%; /* Увеличиваем ширину панели и добавляем небольшой отступ */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.panel-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.input-panel input[type="text"],
+.input-panel textarea,
+.input-panel button,
+.output-panel input[type="text"],
+.output-panel button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #444;
+    color: #fff;
+}
+
+.input-panel button,
+.output-panel button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-panel button:hover,
+.output-panel button:hover {
+    background-color: #0056b3;
+}
+
+#output-message {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+
+.btn-direct {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Цвет фона кнопки (замените на нужный) */
+    color: #FFFFFF; /* Цвет текста на кнопке (замените на нужный) */
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    border: 2px solid #007BFF; /* Толщина и цвет границы кнопки (замените на нужный) */
+    border-radius: 5px; /* Закругленные углы */
+    font-size: 16px; /* Размер текста (замените на нужный) */
+    cursor: pointer; /* Курсор в виде указателя при наведении */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавные переходы при наведении */
+}
+  
+.btn-direct:hover {
+    background-color: #000000; /* Цвет фона кнопки при наведении */
+    color: #fcf0f0; /* Цвет текста на кнопке при наведении */
+}
+
+.create {
+    background-color: #00b972;
+    border: 2px solid rgb(0, 172, 92);
+}
+
+.btns-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.text {
+    width: 90%;
+    text-align: left;
+    hyphens: auto;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#msg-warning {
+    /* margin-top: 10px; */
+    float: right;
+    padding-bottom: 15px;
+}

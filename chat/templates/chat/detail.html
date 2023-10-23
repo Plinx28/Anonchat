@@ -1,0 +1,20 @@
+{% extends 'chat/layout.html' %}
+
+{% block title %} Message {% endblock %}
+
+{% block content %}
+    <div class="panel">
+        <div class="text">
+            <h2>{{ secret_phrase }}</h2>
+            <p>{{ text }}</p>
+        </div>
+        
+        <div class="btns-container">
+            <div class="btn-direct">
+                <a href="{% url 'home' %}">To home page</a>
+            </div>
+        </div>
+        <span id="msg-warning">This message will be deleted.</span>
+    </div>
+    
+{% endblock %}

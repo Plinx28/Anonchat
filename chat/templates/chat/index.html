@@ -1,0 +1,18 @@
+{% extends 'chat/layout.html' %}
+
+{% block title %} Anonchat {% endblock %}
+
+{% block content %}
+    <h1><i>Welcome to Anonchat!</i></h1>
+    <h2>Unread messages on server: {{notes_len}}</h2>
+
+    <div class="btns-container">
+        <div class="btn-direct create">
+            <a href="{% url 'message-create' %}">Create new message</a>
+        </div>
+
+        <div class="btn-direct">
+            <a href="{% url 'message-read' %}">Read message by hash-ID</a>
+        </div>
+    </div>
+{% endblock %}

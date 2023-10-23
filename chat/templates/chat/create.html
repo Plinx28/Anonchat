@@ -1,0 +1,21 @@
+{% extends 'chat/layout.html' %}
+
+{% block title %} Create message {% endblock %}
+<!-- form as_p (without ()) -->
+{% block content %}
+    <div class="panel">
+        <div class="btn-direct">
+            <a href="{% url 'home' %}">To home page</a>
+        </div>
+        <p class="panel-title">Send message</p>
+        <div class="input-panel">
+            <form method="post">
+                {% csrf_token %}
+                {{ form.secret_phrase }} <br>
+                {{ form.text }} <br>
+                <span>{{ error }}</span><br>
+                <button id="send-button" type="submit">Send message</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
